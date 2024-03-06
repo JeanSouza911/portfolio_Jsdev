@@ -23,8 +23,9 @@ export const Title = styled.h3`
 `;
 
 export const Description = styled.p`
-  width: 30rem;
-  height: 10rem;
+  height: 5rem;
+  width: 100%;
+  max-width: 30rem;
   font-size: 1.4rem;
   text-align: center;
 `;

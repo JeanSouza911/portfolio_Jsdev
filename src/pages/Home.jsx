@@ -39,17 +39,15 @@ const Home = () => {
       <Heading> <Span>J</Span>ean<Span>S</Span>ouza </Heading>
       <Paragraph>Front-end <Span>Dev</Span>eloper</Paragraph>
     
-    <TextContainer>
+     <TextContainer>
       <animated.div style={props}>
         <p>{texts[textIndex]}</p>
       </animated.div>
       <DownloadButton style={{textDecorationLine: 'none'}} href='https://drive.google.com/uc?export=download&id=1pkThIxwHixNdzG-5D-2cwLp1GHw5-Ap7'>
           Download CV
-    </DownloadButton>
+      </DownloadButton>
     </TextContainer>
-    
-    
-      </Container>
+    </Container>
       <Profile />
     </Wrapper>
   );

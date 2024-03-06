@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-   margin: 5rem auto;
-   padding: 1rem 1rem;
-   width: 70%;
+   margin: 2rem auto; 
+   padding: 1rem;
+   width: 90%; 
+   max-width: 800px;
    overflow-wrap: break-word;
    box-shadow: 0 0 1rem;
    border-radius: 10px;
