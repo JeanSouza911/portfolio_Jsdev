@@ -7,30 +7,30 @@ import Profile from '../components/Profile';
 const Home = () => {
 
   const [textIndex, setTextIndex] = useState(0);
-  const texts = ['Paixão em desenvolver', 'Prazer em entregar soluções']; // Adicione quantos textos quiser
-  const animationDuration = 4000; // Duração da animação em milissegundos
-  const initialTextDisplayDuration = 500; // Tempo de exibição inicial do primeiro texto em milissegundos
+  const texts = ['Paixão...', 'em desenvolver', 'Prazer...', 'em entregar soluções']; 
+  const animationDuration = 4000;
+  const initialTextDisplayDuration = 500;
 
   const props = useSpring({
     from: { opacity: 0 },
     to: { opacity: 1 },
     config: { duration: animationDuration},
     reset: true,
-    reverse: textIndex % 1 === 1, // Inverte a animação a cada novo texto
+    reverse: textIndex % 1 === 1, 
     onRest: () => {
       setTimeout(() => {
-        setTextIndex((prevIndex) => (prevIndex + 1) % texts.length); // Avança para o próximo texto
-      }, textIndex === 0 ? initialTextDisplayDuration :0); // Tempo de espera antes de mudar para o próximo texto
+        setTextIndex((prevIndex) => (prevIndex + 1) % texts.length); 
+      }, textIndex === 0 ? initialTextDisplayDuration :0); 
     },
   });
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {
-      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length); // Avança para o próximo texto após o tempo inicial
+      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
     }, initialTextDisplayDuration);
 
     return () => clearTimeout(timeoutId);
-  },[texts.length]); // Executa apenas uma vez no início
+  },[texts.length]);
 
 
   return (
