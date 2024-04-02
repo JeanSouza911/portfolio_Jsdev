@@ -1,15 +1,16 @@
  # Portfolio JsDev 
 <div align="center"><br>  
+ 
  Esta é a primeira versão do meu Portfólio pessoal feito com ReactJS, apresento aqui alguns dos meus projetos  
  e informações sobre mim.
- Embora ainda caibam muitas melhorias e implementações para serem adicionadas ao longo do tempo, o desenvolvimento do projeto até aqui já foi o suficiente para me trazer mais maturidade como desenvolvedor, me esforçei bastante e estou feliz com o resultado até aqui.
+ Embora ainda caibam muitas melhorias e implementações para serem adicionadas ao longo do tempo, o desenvolvimento do projeto até aqui já foi o suficiente para me trazer mais maturidade como desenvolvedor, me esforçei bastante e estou 
+ feliz com o resultado até aqui.
    
- 
  </div>
 
  ## 🎨 Layout
 
-
+ ![Web](https://github.com/JeanSouza911/portfolio_Jsdev/blob/master/public/img/Jsdev2.png)
 
  ## ⚙️ Pré-requisitos
 
