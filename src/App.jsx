@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from './components/Navbar';
 import { Outlet } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
@@ -6,13 +6,20 @@ import { lightTheme, darkTheme } from './styles/Themes';
 import { GlobalStyles } from './styles/Global';
 
 function App() {
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState(() => {
+    const savedTheme = localStorage.getItem('theme');
+    return savedTheme || 'dark';
+  });
 
-    const toggleTheme = () => {
+  useEffect(() => {
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
     setTheme(prevTheme => (prevTheme === 'light' ? 'dark' : 'light'));
-    };
+  };
 
-    return (
+  return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
       <GlobalStyles />
       <div>
@@ -24,4 +31,3 @@ function App() {
 }
 
 export default App;
-
