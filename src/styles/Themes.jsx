@@ -1,20 +1,22 @@
+const primaryColor = '#0077b5';
+const secondaryColor = '#ffbb33';
+
 export const lightTheme = {
     body: '#fff',
     text: '#000',
     link: '#000',
-    span: '#ff0000',
-    button: '#ff0000',
-    textContainer: '#ff0000',
-    hover: '#b10202', 
-  };
+    span: primaryColor,
+    button: primaryColor,
+    textContainer: primaryColor,
+    hover: '#0703f7', 
+};
   
-  export const darkTheme = {
+export const darkTheme = {
     body: '#252537',
     text: '#fff',
     link: '#fff',
-    span: '#ffbb33',
-    button: '#ffbb33',
-    textContainer: '#ffbb33',
+    span: secondaryColor,
+    button: secondaryColor,
+    textContainer: secondaryColor,
     hover: '#af7502',
-  };
-  
+};
