@@ -1,4 +1,4 @@
-import { Container, Project, Title, Description, Link } from '../styles/ProjectStyles';
+import { Container, Project, Title, Description, Link, Paragraph } from '../styles/ProjectStyles';
 import { Span } from '../styles/HomeStyles';
 
 const Projects = () => {
@@ -28,7 +28,7 @@ const Projects = () => {
             <Title><Span>Por enquanto é só...</Span></Title>
             <Description>Em breve mais projetos por aqui!</Description>
           </Project>
-          <h1>Para mais detalhes sobre estes e outros projetos, acesse meu <Link href='https://github.com/JeanSouza911'>github!</Link></h1>
+          <Paragraph>Para mais detalhes sobre estes e outros projetos, acesse meu <Link href='https://github.com/JeanSouza911'>github!</Link></Paragraph>
       </Container>
     </>
   );
