@@ -17,9 +17,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route
           element={<AppWithTransition />}
         >
-          <Route
-            index
-            element={<Home />}
+          <Route 
+          path='/'
+            index element={<Home />}
           />
           <Route
             path='about'
