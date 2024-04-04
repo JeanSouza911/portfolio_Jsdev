@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Heading, Paragraph, DownloadButton, TextContainer, Wrapper, Span } from '../styles/HomeStyles';
 import { useState, useEffect } from 'react';
 import { useSpring, animated } from 'react-spring';

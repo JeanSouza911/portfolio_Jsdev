@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, Heading, Paragraph, Footer  } from '../styles/AboutStyles';
 import { Span } from '../styles/AboutStyles';
 import { FaHtml5, FaCss3, FaJs, FaReact, FaGit} from 'react-icons/fa';

@@ -1,4 +1,3 @@
-import React from 'react';
 import { Container, ContactInfo, ContactItem, Link } from '../styles/ContactStyles';
 import { SiGmail } from 'react-icons/si';
 import { FaLinkedin, FaWhatsapp } from 'react-icons/fa';
