@@ -1,3 +1,4 @@
+import React from 'react';
 import {ProfileImageContainer, ProfileImage} from '../styles/ProfileStyles';
 
 const Profile = () => {
