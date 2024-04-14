@@ -1,31 +1,15 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  text-align: center;
   width: 100%;
-  margin: 15rem;
-
-  @media screen and (max-width: 1130px) {
-    margin: 8rem;
-  }
-
-  @media screen and (max-width: 768px) {
-    margin: 6rem;
-  }
-
-  @media screen and (max-width: 480px) {
-    margin: 4rem;
-  }
-
-  @media screen and (max-width: 320px) {
-    margin: 2rem;
-  }
 `;
 
 export const Heading = styled.h1`
   font-size: 4.5rem;
 
   @media screen and (max-width: 1130px) {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   @media screen and (max-width: 768px) {
@@ -110,12 +94,25 @@ export const TextContainer = styled.div`
 `;
 
 export const Wrapper = styled.div`
-  height: 100%;
+  padding: 5rem 0; 
   display: flex;
   justify-content: center;
 
   @media screen and (max-width: 1130px) {
+    padding: 8rem 0;
+  }
+
+  @media screen and (max-width: 768px) {
     flex-direction: column;
+    padding: 6rem 0;
+  }
+
+  @media screen and (max-width: 480px) {
+    padding: 4rem 0;
+  }
+
+  @media screen and (max-width: 320px) {
+    padding: 2rem 0;
   }
 `;
 

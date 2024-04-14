@@ -88,7 +88,7 @@ export const Link = styled.a`
     box-shadow: 0 0 0.5rem;
     height: 350px;
     width: 500px;
-    border-radius: 2rem;
+    border-radius: 1rem;
 
     @media screen and (max-width: 1130px) {
       height: 300px;

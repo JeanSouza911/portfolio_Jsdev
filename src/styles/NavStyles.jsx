@@ -3,13 +3,10 @@ import styled from "styled-components";
 
 export const Nav = styled.nav`
     font-size: 1.5rem;
-    margin: 2rem auto;
-    width: 90%;
+    margin: 3rem auto;
+    padding: 2rem auto;
+    width: 100%;
     max-width: 800px;
-
-    @media screen and (max-width: 965px) {
-    margin-left: 0;
-  }
 `;
 
 export const Menu = styled.ul`
