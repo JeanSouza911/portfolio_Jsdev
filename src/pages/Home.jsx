@@ -7,7 +7,7 @@ import Profile from '../components/Profile';
 const Home = () => {
 
   const [textIndex, setTextIndex] = useState(0);
-  const texts = ['Paixão...', 'em desenvolver', 'Prazer...', 'em entregar soluções']; 
+  const texts = ['Paixão...', 'em desenvolver', 'Prazer...', 'em entregar...', 'Soluções']; 
   const animationDuration = 4000;
   const initialTextDisplayDuration = 500;
 
@@ -43,7 +43,9 @@ const Home = () => {
       <animated.div style={props}>
         <p>{texts[textIndex]}</p>
       </animated.div>
-      <DownloadButton style={{textDecorationLine: 'none'}} href='https://drive.google.com/uc?export=download&id=1pkThIxwHixNdzG-5D-2cwLp1GHw5-Ap7'>
+      <DownloadButton style={{textDecorationLine: 'none'}} 
+      href='https://drive.google.com/uc?export=download&id=1pkThIxwHixNdzG-5D-2cwLp1GHw5-Ap7' 
+      download>
           Download CV
       </DownloadButton>
     </TextContainer>
