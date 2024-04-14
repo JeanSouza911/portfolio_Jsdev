@@ -32,7 +32,7 @@ const Navbar = ({ toggleTheme, theme }) => {
 
   return (
     <Nav>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+      <div style={{ display: 'flex', justifyContent: 'space-evenly', alignItems: 'center' }}>
         <div>
           {theme === 'light' ? (
             <FaMoon onClick={toggleTheme} style={{ cursor: 'pointer' }} />
@@ -45,24 +45,32 @@ const Navbar = ({ toggleTheme, theme }) => {
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </div>
         )}
+        {!isSmallScreen && (
+          <Menu style={{ display: isMenuOpen ? 'block' : 'flex' }}>
+            <MenuItem>
+              <StyledLink to='/' onClick={handleCloseMenu}>Home</StyledLink>
+              <StyledLink to='/about' onClick={handleCloseMenu}>Sobre</StyledLink>
+              <StyledLink to='/projects' onClick={handleCloseMenu}>Projetos</StyledLink>
+              <StyledLink to='/contact' onClick={handleCloseMenu}>Contato</StyledLink>
+            </MenuItem>
+          </Menu>
+        )}
       </div>
       {isSmallScreen && isMenuOpen && (
-        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', backgroundColor: '#333', padding: '10px', position: 'absolute', width:'100%', zIndex: '1', height: '10rem' }}>
+        <div style={{ display: 'flex', 
+        flexDirection: 'column', 
+        alignItems: 'center', 
+        backgroundColor: '#4d4c4c', 
+        padding: '0.8rem', 
+        position: 'absolute',
+        width:'100%',
+        zIndex: '1', 
+        height: '10rem' }}>
           <StyledLink to='/' onClick={handleCloseMenu}>Home</StyledLink>
           <StyledLink to='/about' onClick={handleCloseMenu}>Sobre</StyledLink>
           <StyledLink to='/projects' onClick={handleCloseMenu}>Projetos</StyledLink>
           <StyledLink to='/contact' onClick={handleCloseMenu}>Contato</StyledLink>
         </div>
-      )}
-      {!isSmallScreen && (
-        <Menu style={{ display: isMenuOpen ? 'block' : 'flex' }}>
-          <MenuItem>
-            <StyledLink to='/' onClick={handleCloseMenu}>Home</StyledLink>
-            <StyledLink to='/about' onClick={handleCloseMenu}>Sobre</StyledLink>
-            <StyledLink to='/projects' onClick={handleCloseMenu}>Projetos</StyledLink>
-            <StyledLink to='/contact' onClick={handleCloseMenu}>Contato</StyledLink>
-          </MenuItem>
-        </Menu>
       )}
     </Nav>
   );
