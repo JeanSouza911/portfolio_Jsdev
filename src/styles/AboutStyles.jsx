@@ -25,7 +25,7 @@ export const Container = styled.div`
    }
 
    @media screen and (max-width: 320px) {
-     width: 90%; //tirar width//
+     width: 90%; 
      margin: 0.5rem auto;
      padding: 0.5rem;
    }
@@ -94,6 +94,55 @@ export const Span = styled.span`
     }
 `;
 
+export const Badges = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  color: ${({ theme }) => theme.span};
+`;
+
+export const BadgeItem = styled.div`
+  color: ${({ theme }) => theme.text};
+  font-size: 3.5rem;
+
+    p{
+        text-align: center;
+        font-size: 1.8rem;
+
+    @media screen and (max-width: 1130px) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 1.4rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 1.3rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 0.8rem;
+    }
+    }
+    
+    @media screen and (max-width: 1130px) {
+      font-size: 3rem;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 2.8rem;
+    }
+
+    @media screen and (max-width: 480px) {
+      font-size: 2.4rem;
+    }
+
+    @media screen and (max-width: 320px) {
+      font-size: 2rem;
+    }
+`;
+
 export const Footer = styled.footer`
     display: flex;
     margin-top: 1.5rem;
@@ -106,7 +155,7 @@ export const Footer = styled.footer`
     }
 
     @media screen and (max-width: 768px) {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     @media screen and (max-width: 480px) {
